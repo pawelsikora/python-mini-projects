@@ -53,6 +53,7 @@ def converter(n):
                             word.append(number + ("teen" if not number[-1] == 't' else "een"))
                     else:
                         word.append(one_digit_words[num[0]][1 if int(num[0]) in range(2, 6) else 0] + ("ty " if num[0] != '8' else 'y ') + (one_digit_words[num[1]][0] if num[1] != '0' else ""))
+                break
                 else:
                     num = num[1:]
                     continue
